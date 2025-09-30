@@ -30,6 +30,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator() throws UnsupportedOperationException
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
+
 2) [] -> addToFront(A) -> [A]
     Tests:
       addToFront(B) throws no Exception
@@ -253,11 +254,238 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
       toString() returns "[A, B]"
 
 8) [A] -> addAfter(B,A) -> [A,B]
+    Tests:
+      addToFront(C) throws no Exception
+      addToRear(C) throws no Exception
+      add(C) throws no Exception
+      addAfter(C, A) throws no Exception
+      addAfter(C, B) throws no Exception
+      addAfter(C, D) thows NoSuchElementException
+      add(-1, C) throws IndexOutOfBoundsException
+      add(0, C) throws no Exception
+      add(1,C) throws no Exception
+      add(2,C) throws IndexOutOfBoundsException
+      removeFirst() returns A 
+      removeLast() returns B 
+      remove(A) returns A 
+      remove(B) returns B 
+      remove(C) throws NoSuchElementException
+      remove(-1) throws IndexOutOfBoundsException
+      remove(0) returns A
+      remove(1) returns B 
+      remove(2) throws IndexOutOfBoundsException
+      set(-1, C) throws IndexOutOfBoundsException
+      set(0, C) throws no Exception
+      set(1, C) throws no Exception 
+      set(2, C) throws IndexOutOfBoundsException
+      get(-1) throws IndexOutOfBoundsException
+      get(0) returns A 
+      get(1) returns B 
+      get(2) throws IndexOutOfBoundsException
+      indexOf(A) returns 0
+      indexOf(B) returns 1
+      indexOf(C) throws NoSuchElementException
+      first() returns A 
+      last() returns B 
+      contains(A) returns true
+      contains(B) returns true 
+      contains(C) returns false
+      isEmpty() returns true
+      size() returns 2
+      iterator() returns an Iterator reference
+      listIterator() throws UnsupportedOperationException
+      listIterator(0) throws UnsupportedOperationException
+      toString() returns "[A, B]"
 9) [A] -> add(B) -> [A,B]
+    Tests:
+      addToFront(C) throws no Exception
+      addToRear(C) throws no Exception
+      add(C) throws no Exception
+      addAfter(C, A) throws no Exception
+      addAfter(C, B) throws no Exception
+      addAfter(C, D) thows NoSuchElementException
+      add(-1, C) throws IndexOutOfBoundsException
+      add(0, C) throws no Exception
+      add(1,C) throws no Exception
+      add(2,C) throws IndexOutOfBoundsException
+      removeFirst() returns A 
+      removeLast() returns B 
+      remove(A) returns A 
+      remove(B) returns B 
+      remove(C) throws NoSuchElementException
+      remove(-1) throws IndexOutOfBoundsException
+      remove(0) returns A 
+      remove(1) returns B 
+      remove(2) throws IndexOutOfBoundsException
+      set(-1, C) throws IndexOutOfBoundsException
+      set(0, C) throws no Exception
+      set(1, C) throws no Exception 
+      set(2, C) throws IndexOutOfBoundsException
+      get(-1) throws IndexOutOfBoundsException
+      get(0) returns A 
+      get(1) returns B 
+      get(2) throws IndexOutOfBoundsException
+      indexOf(A) returns 0
+      indexOf(B) returns 1
+      indexOf(C) throws NoSuchElementException
+      first() returns A 
+      last() returns B 
+      contains(A) returns true
+      contains(B) returns true 
+      contains(C) returns false
+      isEmpty() returns true
+      size() returns 2
+      iterator() returns an Iterator reference
+      listIterator() throws UnsupportedOperationException
+      listIterator(0) throws UnsupportedOperationException
+      toString() returns "[A, B]"
+      
 10) [A] -> add(0,B) -> [B,A]
+    Tests:
+      addToFront(C) throws no Exception
+      addToRear(C) throws no Exception
+      add(C) throws no Exception
+      addAfter(C, A) throws no Exception
+      addAfter(C, B) throws no Exception
+      addAfter(C, D) thows NoSuchElementException
+      add(-1, C) throws IndexOutOfBoundsException
+      add(0, C) throws no Exception
+      add(1,C) throws no Exception
+      add(2,C) throws IndexOutOfBoundsException
+      removeFirst() returns A 
+      removeLast() returns B 
+      remove(A) returns A 
+      remove(B) returns B 
+      remove(C) throws NoSuchElementException
+      remove(-1) throws IndexOutOfBoundsException
+      remove(0) returns A 
+      remove(1) returns B 
+      remove(2) throws IndexOutOfBoundsException
+      set(-1, C) throws IndexOutOfBoundsException
+      set(0, C) throws no Exception
+      set(1, C) throws no Exception 
+      set(2, C) throws IndexOutOfBoundsException
+      get(-1) throws IndexOutOfBoundsException
+      get(0) returns B
+      get(1) returns A
+      get(2) throws IndexOutOfBoundsException
+      indexOf(A) returns 0
+      indexOf(B) returns 1
+      indexOf(C) throws NoSuchElementException
+      first() returns B
+      last() returns A
+      contains(A) returns true
+      contains(B) returns true 
+      contains(C) returns false
+      isEmpty() returns true
+      size() returns 2
+      iterator() returns an Iterator reference
+      listIterator() throws UnsupportedOperationException
+      listIterator(0) throws UnsupportedOperationException
+      toString() returns "[B, A]"
+
 11) [A] -> add(1,B) -> [A,B]
+    Tests:
+      addToFront(C) throws no Exception
+      addToRear(C) throws no Exception
+      add(C) throws no Exception
+      addAfter(C, A) throws no Exception
+      addAfter(C, B) throws no Exception
+      addAfter(C, D) thows NoSuchElementException
+      add(-1, C) throws IndexOutOfBoundsException
+      add(0, C) throws no Exception
+      add(1,C) throws no Exception
+      add(2,C) throws IndexOutOfBoundsException
+      removeFirst() returns A 
+      removeLast() returns B 
+      remove(A) returns A 
+      remove(B) returns B 
+      remove(C) throws NoSuchElementException
+      remove(-1) throws IndexOutOfBoundsException
+      remove(0) returns A 
+      remove(1) returns B 
+      remove(2) throws IndexOutOfBoundsException
+      set(-1, C) throws IndexOutOfBoundsException
+      set(0, C) throws no Exception
+      set(1, C) throws no Exception 
+      set(2, C) throws IndexOutOfBoundsException
+      get(-1) throws IndexOutOfBoundsException
+      get(0) returns A 
+      get(1) returns B 
+      get(2) throws IndexOutOfBoundsException
+      indexOf(A) returns 0
+      indexOf(B) returns 1
+      indexOf(C) throws NoSuchElementException
+      first() returns A 
+      last() returns B 
+      contains(A) returns true
+      contains(B) returns true 
+      contains(C) returns false
+      isEmpty() returns true
+      size() returns 2
+      iterator() returns an Iterator reference
+      listIterator() throws UnsupportedOperationException
+      listIterator(0) throws UnsupportedOperationException
+      toString() returns "[A, B]"
+
 12) [A] -> removeFirst() -> []
+    Tests:
+      addToFront(A) throws no Exception
+      addToRear(A) throws no Exception
+      add(A) throws no Exception
+      addAfter(B, A) throws NoSuchElementException
+      add(-1, A) throws IndexOutOfBoundsException
+      add(0, A) throws no Exception
+      add(1, A) throws IndexOutOfBoundsException
+      removeFirst() throws NoSuchElementException
+      removeLast() throws NoSuchElementException
+      remove(A) throws NoSuchElementException
+      remove(-1) throws IndexOutOfBoundsException
+      remove(0) throws IndexOutOfBoundsException
+      remove(1) throws IndexOutOfBoundsException
+      set(-1, B) throws IndexOutOfBoundsException
+      set(0, B) throws no Exception
+      set(1, B) throws IndexOutOfBoundsException
+      indexOf(A) returns -1
+      first() throws NoSuchElementException
+      last() throws NoSuchElementException
+      contains(A) returns false
+      isEmpty() returns true
+      size() returns 0
+      iterator() returns an Iterator reference
+      listIterator() throws UnsupportedOperationException
+      listIterator(0) throws UnsupportedOperationException
+      toString() returns "[]"
+
 13) [A] -> removeLast() -> []
+    Tests:
+      addToFront(A) throws no Exception
+      addToRear(A) throws no Exception
+      add(A) throws no Exception
+      addAfter(B, A) throws NoSuchElementException
+      add(-1, A) throws IndexOutOfBoundsException
+      add(0, A) throws no Exception
+      add(1, A) throws IndexOutOfBoundsException
+      removeFirst() throws NoSuchElementException
+      removeLast() throws NoSuchElementException
+      remove(A) throws NoSuchElementException
+      remove(-1) throws IndexOutOfBoundsException
+      remove(0) throws IndexOutOfBoundsException
+      remove(1) throws IndexOutOfBoundsException
+      set(-1, B) throws IndexOutOfBoundsException
+      set(0, B) throws no Exception
+      set(1, B) throws IndexOutOfBoundsException
+      indexOf(A) returns -1
+      first() throws NoSuchElementException
+      last() throws NoSuchElementException
+      contains(A) returns false
+      isEmpty() returns true
+      size() returns 0
+      iterator() returns an Iterator reference
+      listIterator() throws UnsupportedOperationException
+      listIterator(0) throws UnsupportedOperationException
+      toString() returns "[]"
+
 14) [A] -> remove(A) -> []
 15) [A] -> remove(0) -> []
 16) [A] -> set(0,B) -> [B]
