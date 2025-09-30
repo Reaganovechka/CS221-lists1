@@ -31,6 +31,20 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
 2) [] -> addToFront(A) -> [A]
+    Tests:
+      addToFront(A) throws no Exception
+      addToFront(B) throws no Exception
+      indexOf(A) returns 0
+      first() returns A
+      contains(A) returns true
+      contains(B) returns false
+      isEmpty returns false
+      size() returns 1
+      iterator() returns an Iterator reference
+      listIterator() 
+      listIterator(0)
+      toString returns "[A]"
+
 3) [] -> addToRear(A) -> [A]
 4) [] -> add(A) -> [A]
 5) [] -> add(0,A) -> [A]
